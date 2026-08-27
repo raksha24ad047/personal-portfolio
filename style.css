@@ -1,0 +1,179 @@
+/* ================================
+   General Page Styles
+   ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f8fa;
+    color: #222222;
+}
+
+
+/* ================================
+   Header
+   ================================ */
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+/* ================================
+   Navigation
+   ================================ */
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d5db;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 12px 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 16px;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #e5e7eb;
+}
+
+nav a[aria-current="page"] {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+
+/* ================================
+   Main Content
+   ================================ */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+p {
+    max-width: 75ch;
+}
+
+
+/* ================================
+   Links
+   ================================ */
+
+a {
+    color: #075985;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   Keyboard Focus
+   ================================ */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #111827;
+    outline-offset: 3px;
+}
+
+
+/* ================================
+   Footer
+   ================================ */
+
+footer {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
