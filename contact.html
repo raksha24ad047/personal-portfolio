@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Explore Raksha Shetty's projects, including an Inventory Management System, Information Bot and SkillPath Navigator.">
+        content="Get in touch with Raksha Shetty through the accessible contact form on her personal portfolio.">
 
     <meta name="author" content="Raksha Shetty">
 
-    <title>Projects | Raksha Shetty</title>
+    <title>Contact | Raksha Shetty</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,8 +19,8 @@
 <body>
 
     <header>
-        <h1>My Projects</h1>
-        <p>A selection of projects I have worked on.</p>
+        <h1>Contact Me</h1>
+        <p>I'd be happy to hear from you.</p>
     </header>
 
     <nav aria-label="Main navigation">
@@ -34,76 +34,74 @@
             </li>
 
             <li>
-                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="projects.html">Projects</a>
             </li>
 
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" aria-current="page">Contact</a>
             </li>
         </ul>
     </nav>
 
     <main>
 
-        <section aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Featured Projects</h2>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
 
             <p>
-                These projects represent some of my practical experience
-                in programming, databases, web development and problem-solving.
+                If you would like to get in touch, you can use
+                the form below.
             </p>
-        </section>
 
+            <form action="#" method="post">
 
-        <section aria-labelledby="project-list-heading">
-            <h2 id="project-list-heading">Project Work</h2>
+                <div>
+                    <label for="name">Full Name</label>
 
-            <article>
-                <h3>Inventory Management System</h3>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+                </div>
 
-                <p>
-                    A database-based inventory management project designed
-                    to manage products, suppliers, purchases, sales,
-                    warehouses and stock information.
-                </p>
+                <div>
+                    <label for="email">Email Address</label>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    MySQL, HTML, CSS and JavaScript
-                </p>
-            </article>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </div>
 
+                <div>
+                    <label for="subject">Subject</label>
 
-            <article>
-                <h3>Information Bot</h3>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required>
+                </div>
 
-                <p>
-                    An information-search application that allows users
-                    to enter a topic and receive useful information
-                    through a simple interface.
-                </p>
+                <div>
+                    <label for="message">Message</label>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    Python and Tkinter
-                </p>
-            </article>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+                </div>
 
+                <button type="submit">
+                    Send Message
+                </button>
 
-            <article>
-                <h3>SkillPath Navigator</h3>
-
-                <p>
-                    A project focused on helping users explore skills,
-                    learning paths and opportunities for developing
-                    their knowledge and career-related abilities.
-                </p>
-
-                <p>
-                    <strong>Project Focus:</strong>
-                    Skill development, learning resources and career planning
-                </p>
-            </article>
+            </form>
 
         </section>
 
